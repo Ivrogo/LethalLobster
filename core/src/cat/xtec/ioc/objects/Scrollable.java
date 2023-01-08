@@ -10,6 +10,7 @@ public class Scrollable extends Actor {
     protected float width;
     protected float height;
     protected boolean leftOfScreen;
+    protected boolean rightOfScreen;
 
     public Scrollable(float x, float y, float width, float height, float velocity) {
         position = new Vector2(x, y);
@@ -17,6 +18,7 @@ public class Scrollable extends Actor {
         this.width = width;
         this.height = height;
         leftOfScreen = false;
+        rightOfScreen = false;
 
     }
 
@@ -40,6 +42,8 @@ public class Scrollable extends Actor {
     public boolean isLeftOfScreen() {
         return leftOfScreen;
     }
+
+    public boolean isRightOfScreen() { return rightOfScreen; }
 
     public float getTailX() {
         return position.x + width;

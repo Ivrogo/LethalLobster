@@ -1,5 +1,6 @@
 package cat.xtec.ioc.utils;
 
+
 import java.util.Random;
 
 public class Methods {
@@ -10,4 +11,5 @@ public class Methods {
         return r.nextFloat() * (max - min) + min;
 
     }
+
 }

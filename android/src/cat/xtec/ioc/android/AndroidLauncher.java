@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import cat.xtec.ioc.SpaceRace;
+import cat.xtec.ioc.LethalLobster;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
@@ -20,6 +20,6 @@ public class AndroidLauncher extends AndroidApplication {
 		config.useImmersiveMode = true;
 
 		// Apliquem la configuració
-		initialize(new SpaceRace(), config);
+		initialize(new LethalLobster(), config);
 	}
 }
